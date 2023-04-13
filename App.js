@@ -18,7 +18,7 @@ export default function App() {
           {[...Array(40).keys()].map((el, index) => (
             <>
               <Text>Age: {index}</Text>
-            <Text>I am {index} years old</Text>
+              <Text>I am {index} years old</Text>
             </>
           ))}
         </ScrollView>
@@ -43,10 +43,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     textAlign: 'left',
+    paddingBottom: 10,
   },
   events: {
+    top: 60,
     alignItems: "center",
-    height: "70%",
+    height: 550,
     margin: 10,
   },
   headervalue: {

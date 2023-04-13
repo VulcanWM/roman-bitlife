@@ -58,5 +58,5 @@ export function BorderView(props) {
         { light: Colors['light']['strong'], dark: Colors['dark']['strong'] },
         "border"
     );
-    return <View style={[{ borderColor }, {borderWidth: 3, padding: 6, margin: 6, borderRadius: 20}, style]} {...otherProps} />;
+    return <View style={[{ borderColor }, {borderWidth: 3, padding: 6, borderRadius: 20}, style]} {...otherProps} />;
 }
