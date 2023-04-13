@@ -44,3 +44,19 @@ export function TouchableOpacity(props) {
 
     return <DefaultTouchableOpacity style={[{ backgroundColor }, style]} {...otherProps} />;
 }
+
+export function Strong(props) {
+    const { style, lightColor, darkColor, ...otherProps } = props;
+    const color = useThemeColor({ light: Colors['light']['strong'], dark: Colors['dark']['strong'] }, "text");
+
+    return <DefaultText style={[{ color }, {fontWeight: "bold"}, style]} {...otherProps} />;
+}
+
+export function BorderView(props) {
+    const { style, lightColor, darkColor, ...otherProps } = props;
+    const borderColor = useThemeColor(
+        { light: Colors['light']['strong'], dark: Colors['dark']['strong'] },
+        "border"
+    );
+    return <View style={[{ borderColor }, {borderWidth: 3, padding: 6, margin: 6, borderRadius: 20}, style]} {...otherProps} />;
+}
